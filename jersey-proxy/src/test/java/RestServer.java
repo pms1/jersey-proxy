@@ -14,9 +14,16 @@ public class RestServer {
 
 	@GET
 	@Path("foo")
-	@Produces("application/xml")
+	// @Produces("application/xml")
 	public Long getMessage2() {
 		return 42L;
 	}
-
+	
+	@GET
+	@Path("foo2")
+	public A getMessage3() {
+		return new A();
+	}
+	
+	
 }

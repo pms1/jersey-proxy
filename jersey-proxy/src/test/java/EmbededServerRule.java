@@ -14,14 +14,19 @@ public class EmbededServerRule implements TestRule {
 	@Override
 	public Statement apply(Statement base, Description description) {
 
+		
 		TestResources resources = description.getAnnotation(TestResources.class);
 
+		System.err.println("D " + description + " " + resources);
+		
 		if (resources == null)
 			resources = description.getTestClass().getAnnotation(TestResources.class);
 
 		if (resources == null)
 			throw new Error("Test " + description + " has no @" + TestResources.class + " annotation");
 
+		System.err.println("RES " + resources);
+		
 		ResourceConfig resourceConfig = new ResourceConfig(resources.value());
 
 		return new Statement() {
