@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: com.github.ws.rs.client.proxy
+Bundle-SymbolicName: com.github.ws.rs.client.proxy
+Bundle-Version: 0.0.1.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: javax.ws.rs,
+ javax.ws.rs.client;version="2.0.1",
+ javax.ws.rs.core;version="2.0.1"

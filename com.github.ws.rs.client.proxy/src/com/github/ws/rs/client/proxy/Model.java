@@ -1,4 +1,4 @@
-package jerseyproxy;
+package com.github.ws.rs.client.proxy;
 
 import java.lang.reflect.Method;
 import java.util.Collections;
